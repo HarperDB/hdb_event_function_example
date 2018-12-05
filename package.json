@@ -1,0 +1,20 @@
+{
+  "name": "hdb_event_function_example",
+  "description": "Example project for HarperDB Event Engine",
+  "main": "main.js",
+  "harperdb_events":[
+    {
+    "schema":"dev",
+    "table":"dog",
+    "events":["insert", "update", "read", "delete"]
+    },
+    {
+      "schema":"dev",
+      "table":"breed",
+      "events":["delete"]
+    }
+  ],
+  "dependencies": {
+    "nodemailer": "^4.6.7"
+  }
+}
